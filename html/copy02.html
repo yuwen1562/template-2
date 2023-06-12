@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/copy02.css" />
+    <link
+      rel="stylesheet"
+      href="../module/bootstrap-5.2.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      href="../module/dataTables/DataTables-1.13.1/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
+    <script src="../module/jquery-3.6.1.min.js"></script>
+    <script src="../module/dataTables/DataTables-1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="../module/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../module/moment-with-locales.min.js"></script>
+    <title>copy02</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">復刻平台02</div>
+      <div id="currentTime" class="currentTime"></div>
+      <div class="company">
+        <span>LNT</span>
+        <span class="text-nowrap">錸特霖公司</span>
+      </div>
+    </div>
+    <div class="main d-flex">
+      <div class="left">
+        <div class="leftUp d-flex">
+          <div class="triangle1">
+            <div class="circleUp1">
+              <div class="ball1">
+                <p>60%</p>
+                <span>完成率</span>
+              </div>
+            </div>
+            <div class="floatText">NO.5</div>
+          </div>
+          <div class="triangle2">
+            <div class="circleUp2">
+              <div class="ball2">
+                <p>60%</p>
+                <span>完成率</span>
+              </div>
+            </div>
+            <div class="floatText">NO.4</div>
+          </div>
+          <div class="triangle3">
+            <div class="circleUp3">
+              <div class="ball3">
+                <p>60%</p>
+                <span>完成率</span>
+              </div>
+            </div>
+            <div class="floatText">NO.3</div>
+          </div>
+          <div class="triangle4">
+            <div class="circleUp4">
+              <div class="ball4">
+                <p>60%</p>
+                <span>完成率</span>
+              </div>
+            </div>
+            <div class="floatText">NO.2</div>
+          </div>
+          <div class="triangle5">
+            <div class="circleUp5">
+              <div class="ball5">
+                <p>60%</p>
+                <span>完成率</span>
+              </div>
+            </div>
+            <div class="floatText">NO.1</div>
+          </div>
+        </div>
+        <div class="leftDown">
+          <div class="data">
+            <p>總銷售額</p>
+            <span>2,621,526</span>
+          </div>
+          <div class="circle"></div>
+          <div class="d-flex">
+            <div class="ballLeft">
+              <div class="ballLeftUp">
+                <div class="ballData">70%</div>
+              </div>
+              <div class="underBallLeftUp">
+                <div class="ballTitle">折扣率</div>
+              </div>
+              <div class="ballLeftDown">
+                <div class="ballData">70%</div>
+              </div>
+              <div class="underBallLeftDown">
+                <div class="ballTitle">完成率</div>
+              </div>
+            </div>
+            <div style="width: 50%"></div>
+            <div class="ballRight">
+              <div class="ballRightUp">
+                <div class="ballData">70%</div>
+              </div>
+              <div class="underBallRightUp">
+                <div class="ballTitle">售罄率</div>
+              </div>
+              <div class="ballRightDown">
+                <div class="ballData">70%</div>
+              </div>
+              <div class="underBallRightDown">
+                <div class="ballTitle">同比</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="leftDown d-flex"> -->
+      <!-- <div> -->
+      <!-- <div></div> 折扣率 -->
+      <!-- <div></div> 完成率 -->
+      <!-- </div> -->
+      <!-- <div> -->
+      <!-- <img class="circle" src="./img/circle.png"> -->
+      <!-- <img class="big" src="./img/big.png"> -->
+      <!-- </div> 總銷售額 -->
+      <!-- <div> -->
+      <!-- <div></div> 售罄率 -->
+      <!-- <div></div> 同比 -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <div class="right">
+        <div class="rightUp">
+          <div class="title d-flex">
+            <img src="../img/title.png" />
+            <div class="titleText">產品銷售情況分析</div>
+          </div>
+          <div class="chart"></div>
+        </div>
+        <div class="rightDown">
+          <div class="title d-flex">
+            <img src="../img/title.png" />
+            <div class="titleText">商品銷售明細</div>
+          </div>
+          <div class="sellRank">
+            <table id="sellRankTable" class="sellRankTable" style="width: 100%">
+              <thead>
+                <tr>
+                  <th>排名</th>
+                  <th>門市</th>
+                  <th>銷售額</th>
+                  <th>完成情況</th>
+                  <!-- <th>儲存</th> -->
+                  <!-- <th>刪除</th> -->
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/fakedata.js"></script>
+  <script src="../js/copy02.js"></script>
+</html>
